@@ -81,7 +81,7 @@ const CTASection = () => {
   }
 
   return (
-    <section className="cta-section">
+    <section className="cta-section" id="consultation">
       <div className="container">
         <div className="cta-content">
           {/* Left Side - Content */}

@@ -5,7 +5,7 @@ const VisualDemo = () => {
   const [isAfter, setIsAfter] = useState(false);
 
   return (
-    <section className="visual-demo">
+    <section className="visual-demo" id="our-work">
       <div className="container">
         <div className="demo-header">
           <h2 className="demo-title">Before & After MeshGuard</h2>
@@ -49,7 +49,7 @@ const VisualDemo = () => {
             <div className={`image-container ${isAfter ? 'after-active' : 'before-active'}`}>
               <div className="image-before">
                 <img 
-                  src="/assets/before-mesh.jpg" 
+                  src="/assets/Fly.jpeg" 
                   alt="Door with insects entering"
                 />
                 <div className="problem-list">
@@ -65,7 +65,7 @@ const VisualDemo = () => {
               
               <div className="image-after">
                 <img 
-                  src="/assets/after-mesh.jpg" 
+                  src="/assets/After-mesh.jpeg" 
                   alt="Door protected with MeshGuard"
                 />
                 <div className="solution-list">

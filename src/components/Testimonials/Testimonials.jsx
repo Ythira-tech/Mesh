@@ -88,7 +88,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="testimonials">
+    <section className="testimonials" id="reviews">
       <div className="container">
         <div className="testimonials-header">
           <h2 className="testimonials-title">Loved by Hundreds of Families</h2>
@@ -99,15 +99,15 @@ const Testimonials = () => {
 
         <div className="testimonials-stats">
           <div className="stat">
-            <div className="stat-number">500+</div>
+            <div className="stat-numb">500+</div>
             <div className="stat-label">Happy Customers</div>
           </div>
           <div className="stat">
-            <div className="stat-number">4.9/5</div>
+            <div className="stat-numb">4.9/5</div>
             <div className="stat-label">Average Rating</div>
           </div>
           <div className="stat">
-            <div className="stat-number">98%</div>
+            <div className="stat-numb">98%</div>
             <div className="stat-label">Recommend Us</div>
           </div>
         </div>

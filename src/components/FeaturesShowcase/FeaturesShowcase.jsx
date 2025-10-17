@@ -4,47 +4,48 @@ import './FeaturesShowcase.css';
 const FeaturesShowcase = () => {
   const features = [
     {
-      icon: '🛡️',
-      title: '99.8% Bug Protection',
+      position: 'top-left',
+      title: '98% Bug Protection',
       description: 'Our fine mesh blocks even the smallest insects while allowing fresh air to flow freely.'
     },
     {
-      icon: '🧲',
+      position: 'top-right',
       title: 'Magnetic Magic',
-      description: 'Easy open and close with strong magnets. Perfect for pets, kids, and busy families.'
+      description: 'Our fine mesh blocks even the smallest insects while allowing fresh air to flow freely.'
     },
     {
-      icon: '⚡',
+      position: 'bottom-left',
       title: 'Quick Installation',
       description: 'Professional installation in hours, not days. No drilling or permanent modifications.'
     },
     {
-      icon: '🎯',
+      position: 'bottom-right',
       title: 'Custom Fit',
       description: 'Precisely measured for your doors and windows. Perfect fit guaranteed.'
     }
   ];
 
   return (
-    <section className="features">
+    <section className="features" id="features">
       <div className="container">
         <div className="features-header">
           <h2 className="features-title">Why Choose MeshGuard Pro?</h2>
-          <p className="features-subtitle">
-            Experience the perfect blend of innovation, quality, and convenience
-          </p>
         </div>
         
-        <div className="features-grid">
+        <div className="swot-grid">
           {features.map((feature, index) => (
-            <div key={index} className="feature-card">
-              <div className="feature-icon">
-                {feature.icon}
-              </div>
-              <h3 className="feature-title">{feature.title}</h3>
-              <p className="feature-description">{feature.description}</p>
+            <div key={index} className={`swot-card ${feature.position}`}>
+              <h3 className="swot-title">{feature.title}</h3>
+              <p className="swot-description">{feature.description}</p>
             </div>
           ))}
+          
+          <div className="swot-center">
+            <div className="center-content">
+              <span className="center-main">MESH</span>
+              <span className="center-sub">GUARD</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -23,7 +23,7 @@ const HeroSection = () => {
   }, [heroImages.length]);
 
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       {/* Enhanced Background with multiple overlays */}
       <div className="hero-background">
         <div 
@@ -38,16 +38,11 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="container">
         <div className="hero-content">
-          {/* Animated Badge */}
-          <div className="hero-badge">
-            <span className="badge-icon">✨</span>
-            <span className="badge-text">Welcome to MeshGuard Pro</span>
-          </div>
           
           {/* Gradient Title */}
           <h1 className="hero-title">
             <span className="title-line">Breathe Freely.</span>
-            <span className="title-line title-accent">Live Comfortably.</span>
+            <span className="title-line title-sub">Live Comfortably.</span>
           </h1>
           
           {/* Subtitle */}
@@ -80,16 +75,16 @@ const HeroSection = () => {
           {/* Trust Stats */}
           <div className="hero-stats">
             <div className="stat-item">
-              <div className="stat-number" data-count="5000">5000+</div>
-              <div className="stat-label">Homes Protected</div>
+              <div className="stat-num" data-count="5000">5000+</div>
+              <div className="stat-labe">Homes Protected</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number" data-count="99.8">99.8%</div>
-              <div className="stat-label">Bug Free Guarantee</div>
+              <div className="stat-num" data-count="99.8">99.8%</div>
+              <div className="stat-labe">Bug Free Guarantee</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">24h</div>
-              <div className="stat-label">Quick Installation</div>
+              <div className="stat-num">24h</div>
+              <div className="stat-labe">Quick Installation</div>
             </div>
           </div>
         </div>

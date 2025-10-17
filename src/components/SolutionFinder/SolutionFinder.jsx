@@ -244,7 +244,7 @@ const SolutionFinder = () => {
   const progress = ((currentStep + 1) / questions.length) * 100;
 
   return (
-    <section className="solution-finder">
+    <section className="solution-finder" id="get-quote">
       <div className="container">
         <div className="finder-header">
           <h2 className="finder-title">Find Your Perfect Mesh Solution</h2>

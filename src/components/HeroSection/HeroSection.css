@@ -53,6 +53,7 @@
   color: #1e40af; /* Deep sky blue for main text */
   position: relative;
   z-index: 2;
+  margin-top: 60px;
 }
 
 .hero-badge {
@@ -88,7 +89,7 @@
   background-clip: text;
 }
 
-.title-accent {
+.title-sub {
   background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -179,20 +180,20 @@
   text-align: center;
 }
 
-.stat-number {
+.stat-num {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.stat-label {
+.stat-labe {
   font-size: 0.9rem;
   opacity: 0.8;
-  color: #4b5563; /* Keep gray for stats labels */
+  color: lightblue;
   font-weight: 500;
 }
 
