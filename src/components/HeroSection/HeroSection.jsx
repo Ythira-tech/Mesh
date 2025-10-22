@@ -1,34 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './HeroSection.css';
 
 const HeroSection = () => {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  
-  const heroImages = [
-    'https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-        'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80',
-       'https://i.pinimg.com/1200x/00/eb/4f/00eb4f0680e3e756d3beb69dc8f28eea.jpg'
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentImage((prev) => (prev + 1) % heroImages.length);
-        setIsTransitioning(false);
-      }, 500);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [heroImages.length]);
+  // Single high-impact product image - replace with your actual product image
+  const productImage = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80';
 
   return (
     <section className="hero" id="hero">
-      {/* Enhanced Background with multiple overlays */}
+      {/* Single high-impact background image */}
       <div className="hero-background">
         <div 
-          className={`hero-slide ${isTransitioning ? 'fading' : 'active'}`}
-          style={{ backgroundImage: `url(${heroImages[currentImage]})` }}
+          className="hero-image"
+          style={{ backgroundImage: `url(${productImage})` }}
         ></div>
       </div>
       
@@ -75,16 +58,16 @@ const HeroSection = () => {
           {/* Trust Stats */}
           <div className="hero-stats">
             <div className="stat-item">
-              <div className="stat-num" data-count="5000">5000+</div>
-              <div className="stat-labe">Homes Protected</div>
+              <div className="stat-num">5000+</div>
+              <div className="stat-label">Homes Protected</div>
             </div>
             <div className="stat-item">
-              <div className="stat-num" data-count="99.8">99.8%</div>
-              <div className="stat-labe">Bug Free Guarantee</div>
+              <div className="stat-num">99.8%</div>
+              <div className="stat-label">Bug Free Guarantee</div>
             </div>
             <div className="stat-item">
               <div className="stat-num">24h</div>
-              <div className="stat-labe">Quick Installation</div>
+              <div className="stat-label">Quick Installation</div>
             </div>
           </div>
         </div>
