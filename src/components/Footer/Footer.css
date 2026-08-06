@@ -407,3 +407,20 @@
     gap: 0.5rem;
   }
 }
+
+/* Add this new style for footer legal links */
+.footer-legal-link {
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: inherit;
+  padding: 0;
+}
+
+.footer-legal-link:hover {
+  color: #3b82f6;
+}

@@ -127,11 +127,11 @@ const Footer = () => {
                 <span className="social-icon">💬</span>
                 <span>WhatsApp</span>
               </a>
-              <a href="#" className="social-link facebook">
+              <a href="https://facebook.com" className="social-link facebook">
                 <span className="social-icon">📘</span>
                 <span>Facebook</span>
               </a>
-              <a href="#" className="social-link instagram">
+              <a href="https://instagram.com" className="social-link instagram">
                 <span className="social-icon">📷</span>
                 <span>Instagram</span>
               </a>
@@ -161,9 +161,15 @@ const Footer = () => {
           </div>
           
           <div className="footer-legal">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
-            <a href="#sitemap">Sitemap</a>
+            <button className="footer-legal-link" onClick={() => {}}>
+              Privacy Policy
+            </button>
+            <button className="footer-legal-link" onClick={() => {}}>
+              Terms of Service
+            </button>
+            <button className="footer-legal-link" onClick={() => {}}>
+              Sitemap
+            </button>
           </div>
 
           <button className="back-to-top" onClick={scrollToTop}>
