@@ -149,7 +149,7 @@ const SolutionFinder = () => {
       price: "From $189"
     },
     'multiple-both-seasonal-planning': {
-      title: "Whole Home Protection Package",
+      title: "Home Protection Package",
       description: "Complete mesh solution for multiple openings with seasonal pest control.",
       features: ["Multi-opening discount", "Seasonal adaptability", "Professional consultation"],
       price: "Package from $799"
@@ -209,11 +209,11 @@ const SolutionFinder = () => {
                 ))}
               </div>
               
-              <div className="solution-price">{solution.price}</div>
+              
               
               <div className="solution-actions">
                 <button className="btn btn-primary">
-                  Get Free Installation Quote
+                  Get Installation Quote
                 </button>
                 <button className="btn btn-secondary" onClick={restartQuiz}>
                   Start Over

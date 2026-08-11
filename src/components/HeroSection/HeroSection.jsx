@@ -31,7 +31,6 @@ const HeroSection = () => {
           {/* Subtitle */}
           <p className="hero-subtitle">
             Experience the future of pest protection with our invisible magnetic mesh screens. 
-            Perfect for families, pet owners, and anyone who loves fresh air without the bugs.
           </p>
           
           {/* Action Buttons - Removed Get Free Quote */}

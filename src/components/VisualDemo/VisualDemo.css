@@ -1,6 +1,6 @@
 .visual-demo {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #F0F4F8 0%, #E2E8F0 50%, #CBD5E1 100%);
+  padding: 60px 0;
+  background-color: #E1E2E6;
 }
 
 .demo-header {
@@ -9,21 +9,24 @@
 }
 
 .demo-title {
-  font-size: 3rem;
+  font-size: 3.1rem;
   font-weight: 800;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  margin-bottom: 0.9rem;
+  background-color: #1E293B;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: DM Sans;
 }
 
 .demo-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #4b5563;
   max-width: 500px;
   margin: 0 auto;
   line-height: 1.6;
+  font-family: DM Sans;
+  font-weight: 500;
 }
 
 /* Toggle Controls */
@@ -38,11 +41,8 @@
   justify-content: center;
   gap: 2rem;
   margin-bottom: 3rem;
-  background: white;
   padding: 1.5rem 2rem;
   border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e2e8f0;
 }
 
 .toggle-btn {
@@ -51,23 +51,17 @@
   gap: 1rem;
   padding: 1rem 1.5rem;
   border: 2px solid #e2e8f0;
-  border-radius: 12px;
-  background: white;
+  border-radius: 60px;
+  background-color: #FCFCFD;
   cursor: pointer;
   transition: all 0.3s ease;
   min-width: 160px;
 }
 
-.toggle-btn:hover {
-  border-color: #3b82f6;
-  transform: translateY(-2px);
-}
-
 .toggle-btn.active {
-  border-color: #3b82f6;
-  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-  color: white;
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+  background-color: #CFCECF;
+  color: #1e293b;
+  border-radius: 60px !important;
 }
 
 .toggle-icon {
@@ -80,10 +74,11 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  font-family: DM Sans;
 }
 
 .toggle-text strong {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
 }
@@ -102,7 +97,7 @@
   position: relative;
   width: 80px;
   height: 40px;
-  background: #e2e8f0;
+  background: #1E293B;
   border-radius: 25px;
   display: flex;
   align-items: center;
@@ -115,7 +110,7 @@
   position: absolute;
   width: 32px;
   height: 32px;
-  background: white;
+  background: #1E293B;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -127,14 +122,14 @@
 
 .switch-handle.on {
   left: calc(100% - 36px);
-  background: #10b981;
-  color: white;
+  background: #FCFCFD;
+  color: #1E293B;
 }
 
 .switch-handle.off {
   left: 4px;
-  background: #ef4444;
-  color: white;
+  background: #CFCECF;
+  color: #1E293B;
 }
 
 .switch-handle span {
@@ -217,29 +212,29 @@
 }
 
 .problem-list {
-  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-  border-left: 4px solid #ef4444;
+  background-color: #CFCECF;
+  border-left: 4px solid #1E293B;
 }
 
 .solution-list {
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-  border-left: 4px solid #10b981;
+  background-color: #FCFCFD;
+  border-left: 4px solid #1E293B;
 }
 
 .problem-list h4,
 .solution-list h4 {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.35rem;
+  font-weight: 800;
   margin-bottom: 1.5rem;
   color: #1f2937;
 }
 
 .problem-list h4 {
-  color: #dc2626;
+  color: #1E293B;
 }
 
 .solution-list h4 {
-  color: #059669;
+  color: #1E293B;
 }
 
 .problem-list ul,
@@ -252,8 +247,8 @@
 .problem-list li,
 .solution-list li {
   padding: 0.75rem 0;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -266,11 +261,13 @@
 }
 
 .problem-list li {
-  color: #7f1d1d;
+  color: #1E293B;
+  font-family: DM Sans;
 }
 
 .solution-list li {
-  color: #064e3b;
+  color: #1E293B;
+  font-family: DM Sans;
 }
 
 /* Responsive Design */

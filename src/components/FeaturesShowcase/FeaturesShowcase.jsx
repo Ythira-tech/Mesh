@@ -4,28 +4,18 @@ import './FeaturesShowcase.css';
 const FeaturesShowcase = () => {
   const features = [
     {
-      position: 'top-left',
+      id: 1,
       title: '98% Bug Protection',
-      description: 'Our fine mesh blocks even the smallest insects while allowing fresh air to flow freely.',
-      icon: '🛡️'
+      description: 'Our fine mesh blocks even the smallest insects while allowing fresh air to flow freely. Experience peace of mind knowing your home is protected from mosquitoes, flies, and other pests without compromising on ventilation.',
+      image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      imageAlt: 'Bug protection mesh'
     },
     {
-      position: 'top-right',
+      id: 2,
       title: 'Magnetic Magic',
-      description: 'Easy on, easy off magnetic system for effortless cleaning and maintenance.',
-      icon: '🧲'
-    },
-    {
-      position: 'bottom-left',
-      title: 'Quick Installation',
-      description: 'Professional installation in hours, not days. No drilling or permanent modifications.',
-      icon: '⚡'
-    },
-    {
-      position: 'bottom-right',
-      title: 'Custom Fit',
-      description: 'Precisely measured for your doors and windows. Perfect fit guaranteed.',
-      icon: '📐'
+      description: 'Easy on, easy off magnetic system for effortless cleaning and maintenance. Our innovative magnetic technology ensures a perfect seal every time, keeping bugs out while letting fresh air in.',
+      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      imageAlt: 'Magnetic mesh system'
     }
   ];
 
@@ -34,25 +24,25 @@ const FeaturesShowcase = () => {
       <div className="container">
         <div className="features-header">
           <h2 className="features-title">Why Choose MeshGuard Pro?</h2>
-          <p className="features-subtitle">Premium protection meets elegant design</p>
         </div>
         
-        <div className="swot-grid">
+        <div className="features-list">
           {features.map((feature, index) => (
-            <div key={index} className={`swot-card ${feature.position}`}>
-              <div className="swot-icon">{feature.icon}</div>
-              <h3 className="swot-title">{feature.title}</h3>
-              <p className="swot-description">{feature.description}</p>
+            <div key={feature.id} className={`feature-item ${index % 2 === 0 ? 'image-left' : 'image-right'}`}>
+              <div className="feature-image-wrapper">
+                <img 
+                  src={feature.image} 
+                  alt={feature.imageAlt} 
+                  className="feature-image"
+                />
+                <div className="feature-icon-overlay">{feature.icon}</div>
+              </div>
+              <div className="feature-content">
+                <h3 className="feature-title">{feature.title}</h3>
+                <p className="feature-description">{feature.description}</p>
+              </div>
             </div>
           ))}
-          
-          <div className="swot-center">
-            <div className="center-content">
-              <span className="center-main">MESH</span>
-              <span className="center-sub">GUARD</span>
-              <div className="center-pro">PRO</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

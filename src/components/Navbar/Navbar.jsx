@@ -11,7 +11,7 @@ const Navbar = () => {
       setIsScrolled(window.scrollY > 50);
       
       // Update active section based on scroll position
-      const sections = ['hero', 'features', 'our-work', 'reviews', 'get-quote', 'consultation'];
+      const sections = ['hero', 'our-work', 'get-quote', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -52,7 +52,7 @@ const Navbar = () => {
           <span className="logo-text">MeshGuard Pro</span>
         </div>
 
-        {/* Desktop Navigation - Center */}
+        {/* Desktop Navigation - Right */}
         <div className="nav-links">
           <button 
             onClick={() => scrollToSection('hero')} 
@@ -61,22 +61,10 @@ const Navbar = () => {
             Home
           </button>
           <button 
-            onClick={() => scrollToSection('features')} 
-            className={`nav-link ${activeSection === 'features' ? 'active' : ''}`}
-          >
-            Features
-          </button>
-          <button 
             onClick={() => scrollToSection('our-work')} 
             className={`nav-link ${activeSection === 'our-work' ? 'active' : ''}`}
           >
             Our Work
-          </button>
-          <button 
-            onClick={() => scrollToSection('reviews')} 
-            className={`nav-link ${activeSection === 'reviews' ? 'active' : ''}`}
-          >
-            Reviews
           </button>
           <button 
             onClick={() => scrollToSection('get-quote')} 
@@ -92,12 +80,6 @@ const Navbar = () => {
             <span className="phone-icon">📞</span>
             <span className="phone-text">+254 700 000 000</span>
           </a>
-          <button 
-            className="nav-cta"
-            onClick={() => scrollToSection('consultation')}
-          >
-            Free Consultation
-          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -121,22 +103,10 @@ const Navbar = () => {
             Home
           </button>
           <button 
-            onClick={() => scrollToSection('features')} 
-            className={`mobile-nav-link ${activeSection === 'features' ? 'active' : ''}`}
-          >
-            Features
-          </button>
-          <button 
             onClick={() => scrollToSection('our-work')} 
             className={`mobile-nav-link ${activeSection === 'our-work' ? 'active' : ''}`}
           >
             Our Work
-          </button>
-          <button 
-            onClick={() => scrollToSection('reviews')} 
-            className={`mobile-nav-link ${activeSection === 'reviews' ? 'active' : ''}`}
-          >
-            Reviews
           </button>
           <button 
             onClick={() => scrollToSection('get-quote')} 
@@ -150,12 +120,6 @@ const Navbar = () => {
               <span className="phone-icon">📞</span>
               Call Now: +254 700 000 000
             </a>
-            <button 
-              className="mobile-cta"
-              onClick={() => scrollToSection('consultation')}
-            >
-              Free Consultation
-            </button>
           </div>
         </div>
       </div>

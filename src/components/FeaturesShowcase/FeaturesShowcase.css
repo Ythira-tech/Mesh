@@ -1,6 +1,6 @@
 .features {
-  padding: 100px 0;
-  background: linear-gradient(135deg, #F0F4F8 0%, #E2E8F0 50%, #CBD5E1 100%);
+  padding: 80px 0 100px;
+  background: #E1E2E6;
   position: relative;
   overflow: hidden;
 }
@@ -12,7 +12,6 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, #3B82F6, #1E40AF);
 }
 
 .container {
@@ -23,206 +22,163 @@
 
 .features-header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  font-family: DM sans;
 }
 
 .features-title {
-  font-size: 3rem;
+  font-size: 3.1rem;
   font-weight: 700;
-  color: #1E293B;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+  background-color: #1E293B !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: DM Sans;
 }
 
 .features-subtitle {
-  font-size: 1.25rem;
-  color: black;
+  font-size: 1.3rem;
+  color: #1a1a1a;
   font-weight: 500;
+  font-family: DM Sans !important;
 }
 
-.swot-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-  min-height: 600px;
+/* Features List */
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
 }
 
-.swot-card {
-  background: lightskyblue;
-  padding: 40px 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(30, 64, 175, 0.08);
-  border: 1px solid #E2E8F0;
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 4rem !important;
+  padding: 2rem;
   transition: all 0.3s ease;
+}
+
+.feature-item.image-left {
+  flex-direction: row;
+}
+
+.feature-item.image-right {
+  flex-direction: row-reverse;
+}
+
+/* Feature Image */
+.feature-image-wrapper {
   position: relative;
+  flex: 0 0 45%;
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
-.swot-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #3B82F6, #1E40AF);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.swot-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 60px rgba(30, 64, 175, 0.15);
-}
-
-.swot-card:hover::before {
-  transform: scaleX(1);
-}
-
-.swot-card.top-left {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.swot-card.top-right {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.swot-card.bottom-left {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.swot-card.bottom-right {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.swot-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.feature-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
   display: block;
+  transition: transform 0.5s ease;
 }
 
-.swot-title {
-  font-size: 1.5rem;
+.feature-item:hover .feature-image {
+  transform: scale(1.03);
+}
+
+/* Feature Content */
+.feature-content {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.feature-title {
+  font-size: 2.3rem !important;
   font-weight: 700;
   color: #1E293B;
   margin-bottom: 1rem;
   line-height: 1.3;
+  font-family: DM Sans;
 }
 
-.swot-description {
-  color: black;
-  line-height: 1.6;
-  font-size: 1rem;
+.feature-description {
+  color: #2d2d2d;
+  line-height: 1.8;
+  font-size: 1.3rem !important;
   margin: 0;
-}
-
-.swot-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 20px 60px rgba(30, 64, 175, 0.3);
-  border: 8px solid white;
-  z-index: 2;
-}
-
-.center-content {
-  text-align: center;
-  color: white;
-}
-
-.center-main {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 2px;
-}
-
-.center-sub {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1;
-  margin-top: 4px;
-  opacity: 0.95;
-}
-
-.center-pro {
-  display: block;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-top: 8px;
-  opacity: 0.9;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 4px 12px;
-  border-radius: 20px;
+  max-width: 90%;
+  font-family: DM Sans;
+  font-weight: 500;
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .feature-item {
+    gap: 2.5rem;
+    padding: 1.5rem;
+  }
+  
+  .feature-image-wrapper {
+    flex: 0 0 50%;
+  }
+  
+  .feature-image {
+    height: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .features {
-    padding: 60px 0;
+    padding: 60px 0 80px;
   }
   
   .features-title {
     font-size: 2.2rem;
   }
   
-  .swot-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    gap: 30px;
-    min-height: auto;
-  }
-  
-  .swot-card {
-    grid-column: 1 !important;
-    grid-row: auto !important;
-    padding: 30px 25px;
-  }
-  
-  .swot-center {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    margin: 40px auto;
-    width: 150px;
-    height: 150px;
-  }
-  
-  .center-main {
-    font-size: 1.4rem;
-  }
-  
-  .center-sub {
+  .features-subtitle {
     font-size: 1.1rem;
   }
   
-  .center-pro {
-    font-size: 0.7rem;
-    letter-spacing: 2px;
+  .features-list {
+    gap: 2rem;
+  }
+  
+  .feature-item {
+    flex-direction: column !important;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .feature-image-wrapper {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  
+  .feature-image {
+    height: 200px;
+  }
+  
+  .feature-content {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .feature-title {
+    font-size: 1.6rem;
+  }
+  
+  .feature-description {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  
+  .feature-icon-overlay {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
   }
 }
 
@@ -232,18 +188,22 @@
   }
   
   .features-subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
-  .swot-card {
-    padding: 25px 20px;
+  .feature-item {
+    padding: 1rem;
   }
   
-  .swot-title {
-    font-size: 1.3rem;
+  .feature-image {
+    height: 180px;
   }
   
-  .swot-icon {
-    font-size: 2rem;
+  .feature-title {
+    font-size: 1.4rem;
+  }
+  
+  .feature-description {
+    font-size: 0.95rem;
   }
 }

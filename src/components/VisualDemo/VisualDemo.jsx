@@ -20,10 +20,8 @@ const VisualDemo = () => {
               className={`toggle-btn ${!isAfter ? 'active' : ''}`}
               onClick={() => setIsAfter(false)}
             >
-              <span className="toggle-icon">🐛</span>
               <span className="toggle-text">
                 <strong>Before</strong>
-                <span>Bugs & Insects</span>
               </span>
             </button>
             
@@ -39,9 +37,7 @@ const VisualDemo = () => {
             >
               <span className="toggle-text">
                 <strong>After</strong>
-                <span>Clean & Protected</span>
               </span>
-              <span className="toggle-icon">✨</span>
             </button>
           </div>
 
